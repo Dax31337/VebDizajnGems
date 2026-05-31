@@ -1,0 +1,420 @@
+/* Heder */
+
+.navbar-default{
+	background: #6DAA79;
+	margin-bottom: 0px;
+}
+
+.navbar-default a{
+	color: #FFF;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navbar-brand{
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.navbar-header{
+	width: 80%;
+}
+
+.menubar{
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+}
+
+.menubar li{
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 2px;
+}
+
+.menubar li a{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+}
+
+@keyframes zoomAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.menubar li a:hover{
+	border-bottom: 5px solid #ccc;
+	animation-name: zoomAnimation;
+  	animation-duration: 1s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: 0s;
+  	animation-iteration-count: 1;
+  	animation-direction: normal;
+  	animation-fill-mode: both;
+}
+
+.navbar-right a{
+	font-size: 14px;
+}
+
+/* Futer */
+
+.footer{
+	background: #6DAA79;
+	padding: 5px;
+}
+
+.footer p{
+	text-align: center;
+	color: #FFF;
+}
+
+/* Karosel */
+
+.carousel-caption{
+	bottom: 50%;
+	transform: translate(0, 20%);
+	padding-bottom: 100px;
+}
+
+.carousel-caption h3{
+	font-size: 1rem;
+	font-family: "Garamond", Times, serif;
+	font-style: oblique;
+	font-weight: 700;
+	color: #fff;
+	text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -3px 0px 0 #000,
+    3px 0px 0 #000,
+    0px -3px 0 #000,
+    0px 3px 0 #000;               
+}           
+
+.carousel-caption h1{
+	font-size: 1rem;
+	font-family: "Garamond", Times, serif;
+	font-style: normal;
+	font-weight: 700;
+	color: #fff;
+	text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -3px 0px 0 #000,
+    3px 0px 0 #000,
+    0px -3px 0 #000,
+    0px 3px 0 #000;               
+}           
+
+/* Flexovi (neki) */
+            
+.servislink {
+	text-align: center;
+	font-size: 20px;
+	border: 2px solid #6DAA79;
+	border-radius: 8px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #6DAA79;	
+}
+
+h2 {
+	font-size: 1rem;
+	font-family: "Garamond", Times, serif;
+	font-style: oblique;
+	font-weight: 700;
+}
+
+.market div{
+	padding: 5px;
+}
+
+div[class="card col-2 col-md-6 col-lg-4"]{
+	min-width: 50%;
+	flex-shrink: 2;
+}
+
+img[class="card-img-top"]{
+	display: flex; 
+	max-width: 80%;
+	flex-grow: 100%; 
+	height: auto;
+	align-self: center;
+}
+
+h5[class="card-title"] {
+	text-align: center;
+}
+
+.generic h3
+
+.generic p {
+	display: flex; 
+	font-size: 20px;
+}
+
+.stranice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Padajuci meni za nalog */
+
+.dropmenu {
+  background-color: #6DAA70;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6DAA79;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #6DAA90;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #6DAA79;
+}
+
+/* Modal za nalog */
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  justify-content: center;
+  display: inline-block;
+  border: 4px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #6DAA79;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Animacije */
+
+@keyframes slideAnimation {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+div[class="card col-12 col-md-6 col-lg-4"], div[class="card col-2 col-md-6 col-lg-4"] {
+  animation-name: slideAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+div[id="carouselExample"], img[src="img/servis0.webp"], img[src="img/market.webp"],h2 {
+  animation-name: fadeAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+
+@keyframes flipAnimation {
+  0% { transform: perspective(400px) rotateY(0); }
+  50% { transform: perspective(400px) rotateY(90deg); }
+  50.1% { transform: perspective(400px) rotateY(270deg); } 
+  100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+img[alt="logo"] {
+  animation-name: flipAnimation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes slideLeftAnimation {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+a[class="navbar-brand"] {
+  animation-name: slideLeftAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+a[class="navbar-brand"] {
+	font-size: clamp(1rem, 6vmin, 4rem);
+	font-family: "Garamond", Times, serif;
+	font-style: oblique;
+	font-weight: 700;
+}
+
+@keyframes slideRightAnimation {
+  0% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+ul[class="menubar"] {
+  animation-name: slideRightAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+/* Lista */
+
+table,th,td {
+  border : 1px solid black;
+  border-color: #6DAA79;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
