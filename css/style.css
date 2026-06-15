@@ -1,52 +1,52 @@
 /* Heder */
 
-.navbar-default{
+.navigacija-glavna{
 	background: #6DAA79;
 	margin-bottom: 0px;
 }
 
-.navbar-default a{
+.navigacija-glavna a{
 	color: #FFF;
 	font-size: 25px;
 	font-weight: bold;
 }
 
-.navbar-brand{
+.navigacija-brend{
 	margin-left: 10px;
 	font-size: 20px;
 }
 
-.navbar-header{
+.navigacija-heder{
 	width: 80%;
 }
 
-.menubar{
+.meni{
 	display: inline-block;
 	margin-top: 15px;
 	float: right;
 }
 
-.menubar li{
+.meni li{
 	list-style-type: none;
 	display: inline-block;
 	margin-top: 2px;
 }
 
-.menubar li a{
+.meni li a{
 	color: #FFF;
 	text-decoration: none;
 	font-size: 20px;
 	padding: 10px;
 }
 
-@keyframes zoomAnimation {
+@keyframes zoom-animacija {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.15); }
 }
 
-.menubar li a:hover{
+.meni li a:hover{
 	border-bottom: 5px solid #ccc;
-	animation-name: zoomAnimation;
+	animation-name: zoom-animacija;
   	animation-duration: 1s;
   	animation-timing-function: ease-in-out;
   	animation-delay: 0s;
@@ -61,12 +61,12 @@
 
 /* Futer */
 
-.footer{
+.futer{
 	background: #6DAA79;
 	padding: 5px;
 }
 
-.footer p{
+.futer p{
 	text-align: center;
 	color: #FFF;
 }
@@ -113,7 +113,7 @@
     0px 3px 0 #000;               
 }           
 
-/* Flexovi (neki) */
+/* Flexovi */
             
 .servislink {
 	text-align: center;
@@ -153,9 +153,7 @@ h5[class="card-title"] {
 	text-align: center;
 }
 
-.generic h3
-
-.generic p {
+.glavno p {
 	display: flex; 
 	font-size: 20px;
 }
@@ -234,7 +232,7 @@ button:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
+.nazad-dugme {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
@@ -255,7 +253,7 @@ img.avatar {
   padding: 16px;
 }
 
-span.psw {
+span.sifra {
   float: right;
   padding-top: 16px;
 }
@@ -274,14 +272,14 @@ span.psw {
   padding-top: 60px;
 }
 
-.modal-content {
+.modal-sadrzaj {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 80%;
 }
 
-.close {
+.zatvori {
   position: absolute;
   right: 25px;
   top: 0;
@@ -290,23 +288,23 @@ span.psw {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.zatvori:hover,
+.zatvori:focus {
   color: red;
   cursor: pointer;
 }
 
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+.modal-animacija {
+  -webkit-animation: zumiraj 0.6s;
+  animation: zumiraj 0.6s
 }
 
-@-webkit-keyframes animatezoom {
+@-webkit-keyframes zumiraj {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}
 }
   
-@keyframes animatezoom {
+@keyframes zumiraj {
   from {transform: scale(0)} 
   to {transform: scale(1)}
 }
@@ -323,13 +321,13 @@ span.psw {
 
 /* Animacije */
 
-@keyframes slideAnimation {
+@keyframes slajder-element {
   0% { transform: translateY(100px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
 
 div[class="card col-12 col-md-6 col-lg-4"], div[class="card col-2 col-md-6 col-lg-4"] {
-  animation-name: slideAnimation;
+  animation-name: slajder-element;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-delay: 0.1s;
@@ -338,13 +336,13 @@ div[class="card col-12 col-md-6 col-lg-4"], div[class="card col-2 col-md-6 col-l
   animation-fill-mode: both;
 }
 
-@keyframes fadeAnimation {
+@keyframes fejd {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 div[id="carouselExample"], img[src="img/servis0.webp"], img[src="img/market.webp"],h2 {
-  animation-name: fadeAnimation;
+  animation-name: fejd;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-delay: 0.1s;
@@ -354,7 +352,7 @@ div[id="carouselExample"], img[src="img/servis0.webp"], img[src="img/market.webp
 }
 
 
-@keyframes flipAnimation {
+@keyframes rotiracuji-logo {
   0% { transform: perspective(400px) rotateY(0); }
   50% { transform: perspective(400px) rotateY(90deg); }
   50.1% { transform: perspective(400px) rotateY(270deg); } 
@@ -362,7 +360,7 @@ div[id="carouselExample"], img[src="img/servis0.webp"], img[src="img/market.webp
 }
 
 img[alt="logo"] {
-  animation-name: flipAnimation;
+  animation-name: rotiracuji-logo;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -370,13 +368,13 @@ img[alt="logo"] {
   animation-fill-mode: both;
 }
 
-@keyframes slideLeftAnimation {
+@keyframes slajder-levo {
   0% { transform: translateX(-100px); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
 }
 
 a[class="navbar-brand"] {
-  animation-name: slideLeftAnimation;
+  animation-name: slajder-levo;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-delay: 0.3s;
@@ -392,13 +390,13 @@ a[class="navbar-brand"] {
 	font-weight: 700;
 }
 
-@keyframes slideRightAnimation {
+@keyframes slajder-desno {
   0% { transform: translateX(100px); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
 }
 
-ul[class="menubar"] {
-  animation-name: slideRightAnimation;
+ul[class="meni"] {
+  animation-name: slajder-desno;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-delay: 0.3s;
@@ -417,4 +415,25 @@ table,th,td {
 }
 th,td {
   padding: 5px;
+}
+
+/* Font */
+
+@font-face {
+  font-family: "HinaMincho";
+  src: url("./fonts/HinaMincho-Regular.ttf");
+}
+
+h2 {
+  font-family: "HinaMincho";
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.darkmod {
+  background-color: black;
+  color: white;
 }

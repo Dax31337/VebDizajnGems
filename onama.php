@@ -1,6 +1,6 @@
 <?php include('web/header.php');?>
 	<div class="container" style="padding: 0px;">
-		<img src="img-png/onama.png" alt="onama" style="display: flex; max-width: 100%; height: auto;">
+		<img src="img/onama.webp" alt="onama" style="display: flex; max-width: 100%; height: auto;">
 	</div>
 	<div>
 		<h2 style="text-align: center;">O Nama</h2>
@@ -16,19 +16,19 @@
 	function loadDoc() {
   		const xhttp = new XMLHttpRequest();
   		xhttp.onload = function() {
-    	myFunction(this);
+    	ajax(this);
   	}
-  	xhttp.open("GET", "user/employees.xml");
+  	xhttp.open("GET", "user/radnici.xml");
   	xhttp.send();
 	}
-	function myFunction(xml) {
+	function ajax(xml) {
   		const xmlDoc = xml.responseXML;
-  		const x = xmlDoc.getElementsByTagName("employee");
+  		const x = xmlDoc.getElementsByTagName("radnik");
   		let table="<tr><th>Ime i Prezime</th><th>Titl</th></tr>";
   		for (let i = 0; i <x.length; i++) { 
     		table += "<tr><td>" +
-    		x[i].getElementsByTagName("alias")[0].childNodes[0].nodeValue + "</td><td>" +
-    		x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</td></tr>";
+    		x[i].getElementsByTagName("naziv")[0].childNodes[0].nodeValue + "</td><td>" +
+    		x[i].getElementsByTagName("titl")[0].childNodes[0].nodeValue + "</td></tr>";
   		}
   		document.getElementById("lista").innerHTML = table;
 	}

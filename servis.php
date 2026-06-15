@@ -1,6 +1,6 @@
 <?php include('web/header.php');?>
 	<div class="container" style="padding: 0px;">
-		<img src="img/servis0.webp" alt="servis0" style="display: flex; max-width: 100%; height: auto;">
+		<img src="img/servis.webp" alt="servis0" style="display: flex; max-width: 100%; height: auto;">
 	</div>
 	<div class="row">
 		<h2 style="text-align: center;">Nasi Servisi</h2>
@@ -58,7 +58,7 @@
  		 </div> 
 		<!--- --->
 		<div class="card col-2 col-md-6 col-lg-4">
-  			<img src="img-png/servis5.png" class="card-img-top" alt="servis5" style="padding-top: 10px;">
+  			<img src="img/servis5.webp" class="card-img-top" alt="servis5" style="padding-top: 10px;">
   			<div class="card-body">
     			<h5 class="card-title">"Fensi" legure metala</h5>
    		 		<p class="card-text">Nas najnoviji servis - Sposobnost pravljenja legura koristeci metale kao zlato, srebro, bakar, itd. Nudimo Vam vise nego samo drago kamenje, vec i prelepe boje i nijanse legura, i nudimo mogucnost da narucite procenat svakog metala po Vasem ukusu i budjetu. Lazno zlato je jeftino a izgleda kao pravo!</p>
@@ -70,7 +70,7 @@
  		 </div> 
 		<!--- --->
 		<div class="card col-2 col-md-6 col-lg-4">
-  			<img src="img-png/servis6.png" class="card-img-top" alt="servis6" style="padding-top: 10px;">
+  			<img src="img/servis6.webp" class="card-img-top" alt="servis6" style="padding-top: 10px;">
   			<div class="card-body">
     			<h5 class="card-title">Industrijski dijamant?</h5>
    		 		<p class="card-text">Na vrhu nase tehnologije i industrije sedi kubni kompresor koji moze da napravi dijamant od karbona. Ovo je nasa super specijalna ponuda za modu iz bucunosti - dragulje od karbona!</p>
